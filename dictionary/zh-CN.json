@@ -1,54 +1,97 @@
 {
-  "version": "1.0.0",
-  "lastUpdate": "2024-03-14",
-  "translations": {
-    "header": {
-      "Docker Compose Generator": "Docker Compose 生成器",
-      "Suggest container": "推荐容器",
-      "Support me": "支持项目",
-      "GitHub": "GitHub"
-    },
-    "main": {
-      "Template Gallery": "模板库",
-      "Docker Compose Settings": "Docker Compose 设置",
-      "Show Settings": "显示设置",
-      "Search": "搜索",
-      "Share": "分享",
-      "Unselect": "取消选择",
-      "Copy Compose": "复制配置"
-    },
-    "templates": {
-      "The Media Server Starter": "媒体服务器入门版",
-      "A straightforward media server setup": "一个简单直观的媒体服务器设置方案",
-      "The Privacy Schizo": "隐私保护套件",
-      "The Dad": "家庭服务器",
-      "The Media Hoarder": "媒体收藏家",
-      "The Automator": "自动化工具集",
-      "The Home Office": "家庭办公套件",
-      "The Dashboard Enjoyer": "仪表盘爱好者",
-      "The Security Essentials": "基础安全套件"
-    },
-    "settings": {
-      "Environment Variables": "环境变量",
-      "Container Settings": "容器设置",
-      "Network Settings": "网络设置",
-      "Volume Settings": "卷设置",
-      "Port Settings": "端口设置",
-      "Advanced Settings": "高级设置"
-    },
-    "tooltips": {
-      "Click to copy": "点击复制",
-      "Copied!": "已复制！",
-      "Select all": "全选",
-      "Deselect all": "取消全选",
-      "Toggle settings": "切换设置"
-    },
-    "messages": {
-      "No results found": "未找到结果",
-      "Loading...": "加载中...",
-      "Error": "错误",
-      "Success": "成功",
-      "Warning": "警告"
+    "version": "1.0.0",
+    "lastUpdate": "2024-03-14",
+    "translations": {
+      "header": {
+        "Docker Compose Generator": "Docker Compose 生成器",
+        "Select the tools you want to include in your docker-compose.yaml": "选择要添加到 docker-compose.yaml 的工具",
+        "Suggest container": "推荐容器",
+        "Support me": "支持项目",
+        "GitHub": "GitHub",
+        "Template Gallery": "模板库"
+      },
+      "tools": {
+        "Smart PVR for usenet and bittorrent users. Monitors multiple RSS feeds for new TV show episodes, automatically downloads them.": "适用于 Usenet 和 BT 用户的智能 PVR。监控多个 RSS 源获取新剧集，自动下载。",
+        "A fork of Sonarr to work with movies. Automatically monitors and downloads movies, handles quality upgrades, and more.": "Sonarr 的电影版分支。自动监控和下载电影，处理质量升级等。",
+        "A music collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new albums...": "适用于 Usenet 和 BT 用户的音乐收藏管理器。可以监控多个 RSS 源获取新专辑...",
+        "Book collection manager for Usenet and BitTorrent users. It integrates with clients such as SABnzbd, NZBGet...": "适用于 Usenet 和 BT 用户的图书收藏管理器。集成 SABnzbd、NZBGet 等客户端...",
+        "A powerful indexer manager/proxy built on the arr stack. Seamlessly integrates with Sonarr, Radarr, Lidarr...": "基于 arr 技术栈构建的强大索引器管理/代理工具。无缝集成 Sonarr、Radarr、Lidarr...",
+        "An adult movie collection manager for Usenet and BitTorrent users.": "适用于 Usenet 和 BT 用户的成人电影收藏管理器。",
+        "Efficient usenet downloader, optimized for reliability, completeness, and speed.": "高效的 Usenet 下载器，针对可靠性、完整性和速度进行了优化。",
+        "A companion application to Sonarr and Radarr that manages and downloads subtitles.": "Sonarr 和 Radarr 的配套应用，用于管理和下载字幕。",
+        "API Support for your favorite torrent trackers, translating searches into tracker-site-specific queries.": "支持您喜欢的 torrent 站点的 API，将搜索转换为特定站点的查询。",
+        "A cross-platform BitTorrent client with an integrated web interface.": "带有集成 Web 界面的跨平台 BitTorrent 客户端。",
+        "NZBHydra 2 is a meta search for newznab indexers and torznab trackers.": "NZBHydra 2 是一个用于 newznab 索引器和 torznab 追踪器的元搜索工具。",
+        "A tool to manage qbittorrent and automate cross-seeding.": "用于管理 qBittorrent 和自动化交叉做种的工具。",
+        "A custom version of Flood with additional rTorrent-like functionality.": "Flood 的自定义版本，具有类似 rTorrent 的额外功能。",
+        "Extracts archives for various media server software like Sonarr, Radarr, Lidarr, etc.": "为 Sonarr、Radarr、Lidarr 等媒体服务器软件解压档案。",
+        "A free software media system that puts you in control of managing and streaming your media.": "一个自由软件媒体系统，让您完全掌控媒体的管理和流媒体播放。",
+        "Media": "媒体",
+        "Download": "下载",
+        "TV": "电视",
+        "PVR": "录制",
+        "Automation": "自动化",
+        "Movies": "电影",
+        "Music": "音乐",
+        "Books": "图书",
+        "Adult": "成人",
+        "Usenet": "Usenet",
+        "Subtitles": "字幕",
+        "Indexer": "索引器",
+        "Proxy": "代理",
+        "Torrent": "种子",
+        "BitTorrent": "BT下载",
+        "Management": "管理",
+        "Web Interface": "Web界面",
+        "Streaming": "流媒体",
+        "Media Server": "媒体服务器",
+        "Transcoding": "转码",
+        "Integration": "集成",
+        "Archive": "存档",
+        "Extraction": "解压",
+        "P2P": "P2P",
+        "Download": "下载",
+        "NZB": "NZB"
+      },
+      "interface": {
+        "services selected": "个服务已选择",
+        "Search": "搜索",
+        "Share": "分享",
+        "Unselect": "取消选择",
+        "Copy Compose": "复制配置",
+        "Show Settings": "显示设置",
+        "Docker Compose Settings": "Docker Compose 设置",
+        "Ctrl k": "Ctrl k"
+      },
+      "settings": {
+        "Environment Variables": "环境变量",
+        "Container Settings": "容器设置",
+        "Network Settings": "网络设置",
+        "Volume Settings": "卷设置",
+        "Port Settings": "端口设置",
+        "Advanced Settings": "高级设置",
+        "Container Name": "容器名称",
+        "Restart Policy": "重启策略",
+        "Network Mode": "网络模式",
+        "Privileged Mode": "特权模式",
+        "Port Mappings": "端口映射",
+        "Volume Mappings": "卷映射"
+      },
+      "tooltips": {
+        "Click to copy": "点击复制",
+        "Copied!": "已复制！",
+        "Select all": "全选",
+        "Deselect all": "取消全选",
+        "Toggle settings": "切换设置"
+      },
+      "messages": {
+        "No results found": "未找到结果",
+        "Loading...": "加载中...",
+        "Error": "错误",
+        "Success": "成功",
+        "Warning": "警告",
+        "Copied to clipboard": "已复制到剪贴板",
+        "Settings saved": "设置已保存"
+      }
     }
   }
-} 
