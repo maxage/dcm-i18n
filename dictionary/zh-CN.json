@@ -1,0 +1,54 @@
+{
+  "version": "1.0.0",
+  "lastUpdate": "2024-03-14",
+  "translations": {
+    "header": {
+      "Docker Compose Generator": "Docker Compose 生成器",
+      "Suggest container": "推荐容器",
+      "Support me": "支持项目",
+      "GitHub": "GitHub"
+    },
+    "main": {
+      "Template Gallery": "模板库",
+      "Docker Compose Settings": "Docker Compose 设置",
+      "Show Settings": "显示设置",
+      "Search": "搜索",
+      "Share": "分享",
+      "Unselect": "取消选择",
+      "Copy Compose": "复制配置"
+    },
+    "templates": {
+      "The Media Server Starter": "媒体服务器入门版",
+      "A straightforward media server setup": "一个简单直观的媒体服务器设置方案",
+      "The Privacy Schizo": "隐私保护套件",
+      "The Dad": "家庭服务器",
+      "The Media Hoarder": "媒体收藏家",
+      "The Automator": "自动化工具集",
+      "The Home Office": "家庭办公套件",
+      "The Dashboard Enjoyer": "仪表盘爱好者",
+      "The Security Essentials": "基础安全套件"
+    },
+    "settings": {
+      "Environment Variables": "环境变量",
+      "Container Settings": "容器设置",
+      "Network Settings": "网络设置",
+      "Volume Settings": "卷设置",
+      "Port Settings": "端口设置",
+      "Advanced Settings": "高级设置"
+    },
+    "tooltips": {
+      "Click to copy": "点击复制",
+      "Copied!": "已复制！",
+      "Select all": "全选",
+      "Deselect all": "取消全选",
+      "Toggle settings": "切换设置"
+    },
+    "messages": {
+      "No results found": "未找到结果",
+      "Loading...": "加载中...",
+      "Error": "错误",
+      "Success": "成功",
+      "Warning": "警告"
+    }
+  }
+} 
